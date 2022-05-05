@@ -1,0 +1,3 @@
+# coding: utf-8
+
+sandwich = dict(spam=2, eggs=1, sausage=1)

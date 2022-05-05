@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "t_00_poetry"
+version = "0.1.0"
+description = ""
+authors = ["Rick van Hattem <Wolph@wol.ph>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+progressbar2 = "^3.1.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

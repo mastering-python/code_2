@@ -1,0 +1,11 @@
+tensorflow
+tensorflow-hub
+opencv-contrib-python
+pygad
+nltk
+gensim
+torch
+torchvision
+scikit
+scikit-lego
+tpot

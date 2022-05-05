@@ -1,0 +1,6 @@
+Loading plugins from plugins.a
+Loading plugins from plugins.b
+After load
+{'a': <class 'plugins.a.A'>,
+ 'b': <class 'plugins.b.B'>,
+ 'plugin': <class 'plugins.base.Plugin'>}

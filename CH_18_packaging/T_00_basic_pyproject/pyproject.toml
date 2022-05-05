@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "T_00_basic_pyproject"
+version = "0.1.0"
+description = ""
+authors = ["Rick van Hattem <Wolph@wol.ph>"]
+packages = [
+    {include="T_00_basic_pyproject"},
+    {include="some_directory/**/*.py"},
+]
+
+include = ["CHANGELOG.rst"]
+exclude = ["T_00_basic_pyproject/local.py"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+progressbar2 = "^3.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+our_command = 'T_00_basic_pyproject.main:run'
+
+[tool.poetry.urls]
+docs='https://progressbar-2.readthedocs.io/'

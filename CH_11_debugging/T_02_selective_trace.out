@@ -1,0 +1,10 @@
+ --- modulename: T_02_selective_trace, funcname: some_test_function
+0.00 T_02_selective_trace.py(19):     c = a + b
+0.00 T_02_selective_trace.py(20):     return c
+ab
+ --- modulename: contextlib, funcname: __exit__
+0.00 contextlib.py(...):         if typ... is None:
+0.00 contextlib.py(...):             try:
+0.00 contextlib.py(...):                 next(self.gen)
+ --- modulename: T_02_selective_trace, funcname: trace
+0.00 T_02_selective_trace.py(12):     sys.settrace(None)

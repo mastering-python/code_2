@@ -1,0 +1,5 @@
+Loading plugins from plugins.a
+Loading plugins from plugins.b
+After load
+<class 'plugins.a.A'>
+<class 'plugins.a.A'>

@@ -1,0 +1,3 @@
+[DEBUG] T_05_logging_config.py:20:_debug: add(a=1, b=123): 124
+[DEBUG] T_05_logging_config.py:20:_debug: add(a=1, b=456): 457
+[DEBUG] T_05_logging_config.py:20:_debug: add(a=456, b=1): 457

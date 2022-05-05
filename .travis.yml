@@ -1,0 +1,33 @@
+# Config file for automatic testing at travis-ci.org
+
+sudo: false
+language: python
+
+env:
+  global:
+    - PIP_WHEEL_DIR=$HOME/.wheels
+    - PIP_FIND_LINKS=file://$PIP_WHEEL_DIR
+
+matrix:
+  include:
+    - python: '3.8'
+      env: TOXENV=py38
+
+cache:
+  directories:
+    - $HOME/.wheels
+
+# command to install dependencies, e.g. pip install -r requirements.txt
+install:
+  - mkdir -p $PIP_WHEEL_DIR
+  - pip wheel -r requirements.txt
+  - pip install tox
+
+script:
+  - tox
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
+

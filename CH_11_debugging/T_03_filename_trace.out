@@ -1,0 +1,8 @@
+ --- modulename: T_03_filename_trace, funcname: some_test_function
+T_03_filename_trace.py(27):     c = a + b
+T_03_filename_trace.py(28):     return c
+ab
+ --- modulename: T_03_filename_trace, funcname: trace
+T_03_filename_trace.py(20):     sys.settrace(None)
+lines   cov%   module   (path)
+    3   100%   T_03_filename_trace   (/CH_11_debugging/T_03_filename_trace.py)
