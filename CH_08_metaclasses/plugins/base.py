@@ -54,7 +54,6 @@ class PluginsThroughFilesystem(PluginsThroughConfiguration):
             # Skip __init__.py and other non-plugin files
             if not MODULE_NAME_RE.match(filename.stem):
                 continue
-                cls.get(filename.stem)
 
             # Skip this file
             if filename == CURRENT_FILE:
