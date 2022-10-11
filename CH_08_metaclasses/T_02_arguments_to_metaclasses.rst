@@ -32,7 +32,7 @@
 ...             setattr(cls, k, v)
 
 
->>> class WithAttribute(metaclass=AddClassAttributeMeta, a=1234):
+>>> class WithAttribute(AddClassAttribute, a=1234):
 ...     pass
 
 
