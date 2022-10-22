@@ -47,14 +47,7 @@ for filename in collect_ignore_paths:
 if sys.version_info < (3, 10):
     collect_ignore_paths.append(CH_03 / 'T_19_match_statement.rst')
 else:
-    warnings.warn('Skipping Python 3.10+ tests')
-
-if (3, 10, 0) > sys.version_info and sys.version_info < \
-        (3, 10, 0, 'beta', 4):
-    collect_ignore_paths.append(CH_04 / 'T_08_enum.rst')
-else:
-    warnings.warn(
-        'Skipping enum tests that are broken in Python 3.10 < b4')
+    warnings.warn(f'Skipping Python 3.10+ tests on {sys.version}')
 
 try:
     import numpy
